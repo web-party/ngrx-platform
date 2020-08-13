@@ -116,11 +116,11 @@ export const selectTotal = createSelector(
 </code-example>
 
 <code-example header="my.selectors.spec.ts">
-import * as fromMyReducers from './my-reducers';
+import * as fromMySelectors from './my.selectors';
 
 describe('My Selectors', () => {
   it('should calc selectTotal', () => {
-    expect(fromMyReducers.selectTotal.projector(2, 3)).toBe(5);
+    expect(fromMySelectors.selectTotal.projector(2, 3)).toBe(5);
   });
 });
 </code-example>
